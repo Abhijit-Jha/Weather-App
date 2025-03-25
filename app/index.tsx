@@ -11,7 +11,7 @@ export default function Index({ navigation }: any) {
   const router = useRouter()
   const [loading, setLoading] = useState(false);
   const [location, setLocation] = useState("");
-  const key = "3f40cccc1dbf4721857155129251803";
+  const key = process.env.NODE_ENV !== "production";
   const [position, setPosition] = useState<Location.LocationObject | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
