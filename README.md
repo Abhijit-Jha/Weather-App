@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# Weather App (Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+This is a **Weather App** built using **Expo**, providing real-time weather information. It fetches data based on **location permissions** or allows users to **search for locations manually** (e.g., "Kandivali").
 
-## Get started
+## Features
+- **Current Weather Conditions**: Temperature, wind speed, wind direction, gust speed.
+- **Air Quality Index (AQI)**: Specialized reports including NO₂, SO₂, and other pollutants.
+- **Additional Insights**: Heat index, dew point, real feel, and pressure.
+- **Location-Based Data**: Uses GPS to fetch real-time weather or allows searching by city name.
+- **User-Friendly UI**: Simple and clean interface for easy access to weather data.
 
-1. Install dependencies
+## Tech Stack
+- **Frontend**: React Native (Expo)
+- **API**: Weather API (e.g., OpenWeatherMap, AirVisual API)
+- **State Management**: React Hooks / Context API
 
-   ```bash
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Abhijit-Jha/Weather-App.git
+   cd Weather-App
+   ```
+2. Install dependencies:
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Start the development server:
+   ```sh
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Usage
+- Allow **location permissions** for automatic weather updates.
+- Manually **search** for a city to get weather details.
+- View **air quality data** and specialized reports.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## API Configuration
+- Sign up for an API key from **OpenWeatherMap** or any other weather API provider.
+- Create a `.env` file in the root directory and add:
+  ```sh
+  API_KEY=your_api_key_here
+  ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Contributions
+Contributions are welcome! Feel free to submit a **pull request**.
 
-## Get a fresh project
+## License
+This project is licensed under the **MIT License**.
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+**Author:** Abhijit Jha
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
